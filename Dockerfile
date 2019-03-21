@@ -25,6 +25,8 @@ RUN LIBC32_DEB=libc6-i386_2.19-18+deb8u10_amd64.deb \
 COPY q.zip .
 COPY entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint.sh
+
 # Unzip q for linux to the root ('/'), change file / directory permissions, finally clean up by removing unused folders / utilities
 RUN unzip /q.zip \
 && chown -R root /q; chmod 755 /q/l32/q \
