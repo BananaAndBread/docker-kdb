@@ -1,0 +1,15 @@
+COPY actor TO '/data/csv/actor.csv' csv header;
+COPY address TO '/data/csv/address.csv' csv header;
+COPY category TO '/data/csv/category.csv' csv header;
+COPY city TO '/data/csv/city.csv' csv header;
+COPY country TO '/data/csv/country.csv' csv header;
+COPY customer TO '/data/csv/customer.csv' csv header;
+COPY film TO '/data/csv/film.csv' csv header;
+COPY film_actor TO '/data/csv/film_actor.csv' csv header;
+COPY film_category TO '/data/csv/film_category.csv' csv header;
+COPY inventory TO '/data/csv/inventory.csv' csv header;
+COPY language TO '/data/csv/language.csv' csv header;
+COPY payment TO '/data/csv/payment.csv' csv header;
+COPY rental TO '/data/csv/rental.csv' csv header;
+COPY staff TO '/data/csv/staff.csv' csv header;
+COPY store TO '/data/csv/store.csv' csv header;
