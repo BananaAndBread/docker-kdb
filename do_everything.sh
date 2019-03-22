@@ -20,6 +20,7 @@ docker exec kdb-example-postgres \
     pg_restore -U postgres -d dvdrental /data/dvdrental.tar
 echo Creating csv storage
 docker exec kdb-example-postgres mkdir /data/csv
+docker exec kdb-example-postgres chown -R postgres:postgres /data/csv
 echo Executing dump script
 docker exec kdb-example-postgres /bin/bash -c "psql -U postgres -d dvdrental < /data/init.sql"
 echo Shutting down postgres container
